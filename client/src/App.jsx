@@ -19,7 +19,7 @@ const handleSubmit=async(e)=>{
 e.preventDefault();
 setResponse("");
 setLoading(true);
-const res=await axios.post("http://localhost:3000/chat", {prompt: prompt});
+const res=await axios.post("https://chatgpt-6zh5.onrender.com/chat", {prompt: prompt});
 setResponse(res);
 setLoading(false);
 
